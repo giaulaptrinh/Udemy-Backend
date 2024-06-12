@@ -1,0 +1,27 @@
+{
+  "name": "giau-backend",
+  "version": "1.0.0",
+  "description": "Fullstack-GiauLee",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giaulaptrinh/Udemy-Backend.git"
+  },
+  "keywords": [
+    "nodejs",
+    "react"
+  ],
+  "author": "GiauLee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giaulaptrinh/Udemy-Backend/issues"
+  },
+  "homepage": "https://github.com/giaulaptrinh/Udemy-Backend#readme",
+  "dependencies": {
+    "express": "4.19.2"
+  }
+}
