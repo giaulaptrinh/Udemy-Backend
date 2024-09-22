@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Delete User</title>
+</head>
+
+<body>
+    <!-- <%= JSON.stringify(userEdit)%> -->
+        <div class="topnav">
+            <a href="/">Home</a>
+            <a href="/create">Create Users</a>
+
+        </div>
+        <div class="form-new-add">
+
+            <form action="/delete-user" method="post">
+                <fieldset>
+
+                    <legend>Delete a user</legend>
+                    <div class="input-group d-none">
+                        <label for="">ID</label>
+                        <input type="text" name="userId" value="<%=userEdit.id%>">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Are you sure to delete this user with Email</label>
+                        <input type="text" name="email" value="<%=userEdit.email%>">
+                    </div>
+                    
+
+                    <div>
+                        <button>Confirm</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+</body>
+
+</html>

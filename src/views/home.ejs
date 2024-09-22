@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>HomePage</title>
+</head>
+
+
+<body>
+
+    <div class="topnav">
+        <a class="active" href="/">Home</a>
+        <a href="/create">Create Users</a>
+
+    </div>
+    <div class="table-container">
+        <!-- <%=JSON.stringify(listUsers)%> -->
+        <div class="title">List User</div>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Action</th>
+            </tr>
+            <% listUsers.forEach(function(user, i){ %>
+                <tr>
+                    <td>
+                        <!-- <%= i+1 %> -->
+                        <%= user.id %>
+                    </td>
+                    <td>
+                        <%=user.email%>
+                    </td>
+                    <td>
+                        <%=user.name%>
+                    </td>
+                    <td>
+                        <%=user.city%>
+                    </td>
+                    <td>
+                        <a href="/update/<%= user.id %>">Edit</a>
+                        <form action="/delete-user/<%= user.id %>" method="post">
+                            <button>Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                <% });%>
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>
