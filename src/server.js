@@ -9,7 +9,7 @@ const fileUpload = require('express-fileupload');
 const connection = require('./config/database');
 const { MongoClient } = require('mongodb');
 const app = express() ///app express
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5000;
 const hostname = process.env.HOST_NAME;
 
 //config file upload
